@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header id="navbar" class="header-background flex">
+    <nav class="header-contents flex">
+      <img class="logo" id="default" src="./assets/images/logo-white@2x.webp" />
+      <img class="logo" id="mobile" src="./assets/images/logo-gray.webp" />
+      <div class="navigation-contents flex poppins">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="other-medias-and-menu flex wrap">
+        <div class="other-medias flex wrap white-filler">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 47" width="14.5px" height="14.5px" class="facebook">
+              <path
+                d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z" />
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" width="12.25px" height="14px" class="instagram">
+              <path
+                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="14px" height="14px" class="twitter">
+              <path
+                d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z" />
+            </svg>
+          </a>
+        </div>
+        <a id="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div>
+
+  </div>
+  <main>
+    <div id="home">
+      <button class="play-button flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="78" viewBox="0 -960 960 960" width="81">
+          <path d="M372-294v-372l292 186-292 186Zm28-186Zm0 134 212-134-212-134v268Z" />
+        </svg>
+      </button>
+      <h1 class="home-heading poppins wrap">AWESOME DESIGNS</h1>
+    </div>
+    <div id="about">
+      <div class=" about-page-1">
+        <div class="about-text flex poppins ">
+          <h1 class="about-text-1 flex-column white-color">A creative agency specialized in web <span
+              class="about-text-1-animation yellow-color slide-up">customize tools</span></h1>
+          <div class="about-text-2 ">
+            <h4 class="about-text-2-heading white-color poppins">ABOUT LITHO WEB AGENCY</h4>
+            <p class="about-text-2-paragraph grey-color roboto">With years of experience in the website design and
+              development industry pride ourselves on creating
+              unique, creative and quality designs that are developed upon the latest modern coding and developing
+              techniques.</p>
+          </div>
+        </div>
+        <div class="about-digital-marketing flex wrap ">
+          <div class="about-digital-marketing-branding flex">
+            <svg fill="#FFFFFF" height="28px" width="28px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+              class="about-digital-marketing-branding-svg-life-buoy">
+              <g>
+                <g>
+                  <path d="M437.019,74.983C388.667,26.63,324.38,0.002,256.001,0.002S123.334,26.63,74.983,74.983
+			C26.63,123.334,0,187.621,0,256.004c0,68.377,26.629,132.66,74.978,181.012l0.002,0.002l0.002,0.002c0,0,0,0,0.002,0.002
+			c48.35,48.35,112.637,74.978,181.016,74.978s132.668-26.629,181.019-74.98C485.371,388.666,512,324.377,512,255.998
+			C511.998,187.619,485.37,123.333,437.019,74.983z M464.167,232.728h-70.48c-3.399-20.284-11.222-39.545-23.156-56.624
+			c-0.236-0.338-0.486-0.664-0.726-0.999l49.847-49.847C444.495,156.232,459.832,193.258,464.167,232.728z M279.272,47.832
+			c39.469,4.336,76.493,19.673,107.467,44.514l-49.828,49.828c-9.436-6.712-19.718-12.268-30.683-16.497
+			c-8.747-3.375-17.762-5.806-26.959-7.349L279.272,47.832z M232.727,47.833l-0.003,70.482
+			c-21.184,3.57-40.766,11.916-57.587,23.906l-49.873-49.875C156.236,67.503,193.259,52.17,232.727,47.833z M92.349,125.258
+			l49.875,49.875c-11.992,16.823-20.34,36.408-23.91,57.595H47.832C52.168,193.258,67.506,156.234,92.349,125.258z M47.83,279.273
+			h70.484c3.57,21.186,11.919,40.769,23.909,57.592l-49.876,49.873C67.503,355.764,52.166,318.741,47.83,279.273z M232.727,464.168
+			c-39.469-4.336-76.496-19.673-107.47-44.517l49.878-49.875c16.821,11.992,36.406,20.339,57.592,23.909V464.168z M255.999,349.091
+			c-51.33,0-93.091-41.76-93.091-93.091c0-51.33,41.757-93.088,93.1-93.088c11.553,0,22.813,2.082,33.471,6.192
+			c35.654,13.749,59.611,48.671,59.614,86.895c0,51.33-41.759,93.091-93.088,93.091H255.999z M279.272,464.17v-70.482
+			c21.187-3.57,40.772-11.919,57.594-23.909l49.878,49.875C355.768,444.498,318.742,459.834,279.272,464.17z M419.653,386.74
+			l-49.875-49.875c11.992-16.821,20.34-36.406,23.91-57.594h70.48C459.832,318.742,444.495,355.766,419.653,386.74z" />
+                </g>
+              </g>
+            </svg>
+            <p class="about-digital-marketing-branding-text poppins grey-color">DIGITAL MARKETING</p>
+          </div>
+          <div class="about-digital-marketing-strategy flex">
+            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28">
+              <path
+                d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z" />
+            </svg>
+            <p class="about-digital-marketing-strategy-text poppins grey-color">BRAND STRATEGY</p>
+          </div>
+          <div class="about-digital-marketing-designing flex">
+            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+              <path
+                d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+            </svg>
+            <p class="about-digital-marketing-designing-text poppins grey-color">WEBSITE DESIGNING</p>
+          </div>
+          <div class="about-digital-marketing-ecommerce flex">
+            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+              <path
+                d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
+            </svg>
+            <p class="about-digital-marketing-ecommerce-text grey-color poppins">ECOMMERCE TOOL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="flex wrap">
+      <div class="services-layout flex-column black-background-opaqued-variant">
+        <div class="services-heading-1 poppins white-color">
+          <p class="services-heading-1-number poppins grey-color">01</p>
+          <h2 class="services-heading-1-text poppins white">Website design</h2>
+        </div>
+          <p class="services-text-1 roboto grey-color">Lorem ipsum dolor consectetur adipiscing elit do
+            eiusmod tempor incididunt ut labore dolore</p>
+      </div>
+      <div class="flex-column services-layout black-background-opaqued-variant">
+        <div class="services-heading-1 poppins white-color">
+          <p class="services-heading-1-number poppins grey-color">02</p>
+          <h2 class="services-heading-1-text poppins white">eCommerce platform</h2>
+        </div>
+        <p class="services-text-1 roboto grey-color">Lorem ipsum dolor consectetur adipiscing elit do
+          eiusmod tempor incididunt ut labore dolore</p>
+      </div>
+      <div class=" flex-column black-background-opaqued-variant services-layout">
+        <div class="services-heading-1 poppins white-color">
+          <p class="services-heading-1-number poppins grey-color">03</p>
+          <h2 class="services-heading-1-text poppins white">Digital platform</h2>
+        </div>
+        <p class="services-text-1 roboto grey-color">Lorem ipsum dolor consectetur adipiscing elit do
+          eiusmod tempor incididunt ut labore dolore</p>
+      </div>
+      <div class="flex-column black-background-opaqued-variant services-layout">
+        <div class="services-heading-1 poppins white-color">
+          <p class="services-heading-1-number poppins grey-color">04</p>
+          <h2 class="services-heading-1-text poppins white">Interface design</h2>
+        </div>
+        <p class="services-text-1 roboto grey-color">Lorem ipsum dolor consectetur adipiscing elit do
+          eiusmod tempor incididunt ut labore dolore</p>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="portfolio-heading-1 flex-column">
+        <p class=" portfolio-heading-1-text-1 yellow-color poppins">RECENT PROJECTS</p>
+        <h4 class="portfolio-heading-1-text-2 white-color poppins ">Selected Portfolio</h4>
+      </div>
+      <div class="portfolio-content-list grid">
+        <div id="portfolio-content-list-bmw" class="portfolio-contents">
+          <img src="assets/images/portfolio-bmw.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+
+            <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+            <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+
+          </div>
+        </div>
+        <div id="portfolio-content-list-cocacola" class="portfolio-contents">
+          <img src="assets/images/portfolio-cocacola.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+
+            <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+            <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+          </div>
+
+        </div>
+        <div id="portfolio-content-list-tshirt" class="portfolio-contents">
+          <img src="assets/images/porfolio-tshirt.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+
+            <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+            <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+
+          </div>
+        </div>
+        <div id="portfolio-content-list-jeans-tag" class="portfolio-contents">
+          <img src="assets/images/portfolio-jeans-tag.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+
+            <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+            <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+
+          </div>
+        </div>
+        <div id="portfolio-content-list-model" class="portfolio-contents">
+          <img src="assets/images/portfolio-model.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+            <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+            <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+          </div>
+        </div>
+
+        <div id="portfolio-content-list-shoes" class="portfolio-contents">
+          <img src="assets/images/portfolio-shoes.webp">
+          <div class="portfolio-overlay">
+            <svg class="yellow-filler portfolio-overlay-svg" style="transform : rotate(-45deg)"
+              xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="35">
+              <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+            </svg>
+            <div class="portfolio-overlay-text">
+              <p class=" portfolio-overlay-text-01 poppins grey-color">BRANDING</p>
+              <h2 class=" portfolio-overlay-text-02 white-color poppins">MONGOLISH</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="testimonials">
+      <div class="testimonials-slider flex ">
+        <div class="testimonials-slider-content flex-column">
+          <p class="testimonials-content grey-color poppins">I wanted to hire the best and after looking at several
+            other
+            companies, I knew Jacob was the perfect guy. I wanted to hire the best and after looking at several other
+            companies.
+          </p>
+          <div class="testimonials-name flex">
+            <h2 class="testimonials-firstName poppins yellow-color">Jeremy</h2>
+            <p class="testimonials-lastName poppins yellow-color">Dupont</p>
+          </div>
+          <p class="testimonials-designation poppins grey-color">creator designer</p>
+        </div>
+        <div class="testimonials-slider-content flex-column poppins ">
+          <p class="testimonials-content grey-color">This theme has a wide variety of options and a really good
+            customer support. Some of the customizations are limited but even so the theme still gives a lot of
+            features.
+          </p>
+          <div class="testimonials-name flex">
+            <h2 class="testimonials-firstName poppins yellow-color">Alaxander</h2>
+            <p class="testimonials-lastName poppins yellow-color">Harvard</p>
+          </div>
+          <p class="testimonials-designation poppins grey-color">creator designer</p>
+        </div>
+        <div class="testimonials-slider-content flex-column">
+          <p class="testimonials-content grey-color poppins">There are design companies and then there are user
+            experience, design, consulting, interface design. I wanted to hire the best and after looking at several
+            other companies.
+          </p>
+          <div class="testimonials-name flex">
+            <h2 class="testimonials-firstName poppins yellow-color">Herman</h2>
+            <p class="testimonials-lastName poppins yellow-color">Miller</p>
+          </div>
+          <p class="testimonials-designation poppins grey-color">creator designer</p>
+        </div>
+        <div class="testimonials-slider-content flex-column">
+          <p class="testimonials-content grey-color poppins">Absolutely amazing theme, flexible and awesome design with
+            possibilities. It's so easy to use and to customize. Simply the great designs and best theme for
+            WooCommerce.
+          </p>
+          <div class="testimonials-name flex">
+            <h2 class="testimonials-firstName poppins yellow-color">Linday</h2>
+            <p class="testimonials-lastName poppins yellow-color">Swanson</p>
+          </div>
+          <p class="testimonials-designation poppins grey-color">creator designer</p>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="contact-page-01 flex wrap">
+        <div class="contact-page-01-info flex-column">
+          <svg class="contact-page-01-info-svg yellow-filler" xmlns="http://www.w3.org/2000/svg" height="50"
+            viewBox="0 -960 960 960" width="50">
+            <path
+              d="m480-920 362 216q18 11 28 30t10 40v434q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-434q0-21 10-40t28-30l362-216Zm0 466 312-186-312-186-312 186 312 186Zm0 94L160-552v352h640v-352L480-360Zm0 160h320-640 320Z" />
+          </svg>
+          <h4 class="contact-page-01-info-text-01 white-color poppins">
+            How can we help you
+          </h4>
+          <a class="contact-page-01-info-link poppins grey-color" href="mailto: info@yourdomain.com">
+            Send us an Email
+          </a>
+          <p class="contact-page-01-info-text-02 grey-color roboto">
+            Lorem ipsum is simply dummy text of the printing industry
+          </p>
+        </div>
+        <div class="contact-page-01-info flex-column">
+          <svg class="contact-page-01-info-svg yellow-filler" xmlns="http://www.w3.org/2000/svg" height="50"
+            viewBox="0 -960 960 960" width="50">
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+          </svg>
+          <h4 class="contact-page-01-info-text-01 white-color poppins">
+            Feel free to get in touch?
+          </h4>
+          <a class="contact-page-01-info-link poppins grey-color" href="#navbar">
+            Give us a call toady
+          </a>
+          <p class="contact-page-01-info-text-02 grey-color roboto">
+            Lorem ipsum is simply dummy text of the printing industry
+          </p>
+        </div>
+        <div class="contact-page-01-info flex-column">
+          <svg class="contact-page-01-info-svg yellow-filler" xmlns="http://www.w3.org/2000/svg" height="50"
+            viewBox="0 -960 960 960" width="50">
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm278-58L296-440l58-58 84 84 168-168 58 58-226 226Zm-278 58v-480 480Z" />
+          </svg>
+          <h4 class="contact-page-01-info-text-01 white-color poppins">
+            Ready to request a quote?
+          </h4>
+          <a class="contact-page-01-info-link poppins grey-color" href="#">
+            Describe your project
+          </a>
+          <p class="contact-page-01-info-text-02 grey-color roboto">
+            Lorem ipsum is simply dummy text of the printing industry
+          </p>
+        </div>
+      </div>
+      <div class="contact-page-02">
+        <div class="contact-page-02-help-section flex-column">
+          <div class="contact-page-02-help-section-heading flex-column">
+            <p class="contact-page-02-help-section-heading-text-01 grey-color poppins ">Fill out the form and we’ll be
+              in touch soon!</p>
+            <h1 class="contact-page-02-help-section-heading-text-02 white-color poppins">How can we help you?</h1>
+          </div>
+          <div class="contact-page-02-help-section-form grid">
+            <textarea name="" id="textarea-01" cols="30" rows="10"
+              class="contact-page-02-help-section-form-textarea roboto grey-color" placeholder="Your name"></textarea>
+            <textarea name="" id="textarea-02" cols="30" rows="10"
+              class="contact-page-02-help-section-form-textarea roboto grey-color" placeholder="Your email address"
+              pattern=""></textarea>
+            <textarea name="" id="textarea-03" cols="30" rows="10"
+              class="contact-page-02-help-section-form-textarea roboto grey-color" placeholder="Your mobile"></textarea>
+            <textarea name="" id="textarea-04" cols="30" rows="10"
+              class="contact-page-02-help-section-form-textarea roboto grey-color"
+              placeholder="Your message"></textarea>
+            <p class="contact-page-02-help-section-form-text grey-color roboto">We are committed to protecting your
+              privacy. We will never collect information about you without your explicit consent.</p>
+            <button class="contact-page-02-help-section-form-button poppins">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer class = "flex">
+      <div class = "footer-bar flex wrap">
+        <div class = "footer-contents-list flex">
+          <a class = "roboto grey-color" href="#about">About</a>
+          <a class = "roboto grey-color" href="#services">Services</a>
+          <a class = "roboto grey-color" href="#portfolio">Portfolio</a>
+          <a class = "roboto grey-color" href="#testimonials">Testimonials</a>
+        </div>
+        <div class = "footer-logo-1 flex">
+          <img class="logo" src="./assets/images/logo-white@2x.webp" />
+        </div>
+        <p class = "footer-copyright roboto grey-color flex">© 2021 Litho is Proudly Powered by <a class = "roboto white-color" href = "https://www.themezaa.com/">ThemeZaa</a></p>
+      
+      </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>
